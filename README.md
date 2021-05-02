@@ -117,7 +117,7 @@ They can be found in [download link]().
 
 Please cite our paper if you find the work useful: 
 
-    @article{fan2021cancealed,
+    @article{fan2021concealed,
     title={Concealed Object Detection},
     author={Fan, Deng-Ping and Ji, Ge-Peng and Cheng, Ming-Ming and Shao, Ling},
     journal={arXiv},
