@@ -5,13 +5,13 @@ PyTorch implementation of our Search and Identification Network (SINet-V2).
 > **Authors:** 
 > [Deng-Ping Fan](https://dpfan.net/), 
 > [Ge-Peng Ji](https://scholar.google.com/citations?user=oaxKYKUAAAAJ&hl=en), 
-> [Ming-Ming Cheng](https://mmcheng.net/),
+> [Ming-Ming Cheng](https://mmcheng.net/) &
 > [Ling Shao](http://www.inceptioniai.org/).
 
 ## 1. Preface
 
 - **Introduction.** This repository contains the source code, prediction results, and evaluation toolbox of our Search and Identification Network (SINet-V2)
-, which are the journal extension version of our SINet ([github](https://github.com/DengPingFan/SINet)/
+, which are the journal extension version of our paper SINet ([github](https://github.com/DengPingFan/SINet)/
 [pdf](https://openaccess.thecvf.com/content_CVPR_2020/papers/Fan_Camouflaged_Object_Detection_CVPR_2020_paper.pdf)) published at CVPR-2020.
 
 - **Highlights.** Compared to our conference version, we achieve new SOTA in the field of COD via the two 
@@ -24,6 +24,8 @@ Please refer to our paper for more details.
 
 ## 2. :fire: NEWS :fire:
 
+- [2021/05/01] Updating the download link of training/testing dataset in our experiments.
+- [2021/04/20] The release of inference map on the [2021-CVPR-NC4K](https://github.com/JingZhang617/COD-Rank-Localize-and-Segment) test dataset, which can be downloaded from the [Google Drive](https://drive.google.com/file/d/1ux2-eDSaAu0EcEV-s04s5u-H27W5siFx/view?usp=sharing).
 - [2021/02/21] Upload the whole project.
 - [2021/01/16] Create repository.
 
@@ -31,7 +33,7 @@ Please refer to our paper for more details.
 ## 3. Overview
 
 <p align="center">
-    <img src="imgs/TaskRelationship.png"/> <br />
+    <img src="./imgs/TaskRelationship.png"/> <br />
     <em> 
     Figure 1: Task relationship. One of the most popular directions in computer vision is generic object detection. 
     Note that generic objects can be either salient or camouflaged; camouflaged objects can be seen as difficult cases of 
@@ -41,7 +43,7 @@ Please refer to our paper for more details.
 </p>
 
 <p align="center">
-    <img src="imgs/CamouflagedTask.png"/> <br />
+    <img src="./imgs/CamouflagedTask.png"/> <br />
     <em> 
     Figure 2: Given an input image (a), we present the ground-truth for (b) panoptic segmentation 
     (which detects generic objects including stuff and things), (c) salient instance/object detection 
@@ -80,13 +82,13 @@ a single GeForce RTX TITAN GPU of 24 GB Memory.
 1. Prepare the data:
 
     + downloading testing dataset and move it into `./Dataset/TestDataset/`, 
-    which can be found in this [download link (Google Drive)]().
-    
+    which can be found in [Baidu Driver](https://pan.baidu.com/s/16QnoxIK3UB_QwnGZMCZ3uQ) (Password: hvov).
+
     + downloading training/validation dataset and move it into `./Dataset/TrainValDataset/`, 
-    which can be found in this [download link (Google Drive)]().
+    which can be found in [Baidu Driver](https://pan.baidu.com/s/1yKaGYr4oztR0lGan1nJ4kQ) (Password: hdj7).
     
     + downloading pretrained weights and move it into `./snapshot/SINet_V2/Net_epoch_best.pth`, 
-    which can be found in this [download link (Google Drive)]().
+    which can be found in this [download link (Google Drive)](https://drive.google.com/file/d/1XrUOmgB86L84JefoNq0gq2scBZjGaTkm/view?usp=sharing).
     
     + downloading Res2Net weights on ImageNet dataset [download link (Google Drive)](https://drive.google.com/file/d/1_1N-cx1UpRQo7Ybsjno1PAg4KE1T9e5J/view?usp=sharing).
    
@@ -110,14 +112,14 @@ please follow this the instructions in `./eval/main.m` and just run it to genera
 The complete evaluation toolbox (including data, map, eval code, and res): [link](https://drive.google.com/file/d/1qga1UJlIQdHNlt_F9TdN4lmmOH4gN7l2/view?usp=sharing). 
 
 ### 3.3 Pre-computed maps: 
-They can be found in [download link]().
+They can be found in [download link](https://drive.google.com/file/d/1wSCvCXaaRLUDl38HOCAMdsVb-8gASJb1/view?usp=sharing).
 
 
 ## 4. Citation
 
 Please cite our paper if you find the work useful: 
 
-    @article{fan2021concealed,
+    @article{fan2021cancealed,
     title={Concealed Object Detection},
     author={Fan, Deng-Ping and Ji, Ge-Peng and Cheng, Ming-Ming and Shao, Ling},
     journal={arXiv},
