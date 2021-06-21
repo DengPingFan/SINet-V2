@@ -1,17 +1,17 @@
-# Concealed Object Detection (SINet-V2)
+# <p align=center>`Concealed Object Detection (IEEE TPAMI)`</p>
 
-PyTorch implementation of our Search and Identification Network (SINet-V2).
+PyTorch implementation of our extended model, termed as Search and Identification Network (SINet-V2).
 
 > **Authors:** 
 > [Deng-Ping Fan](https://dpfan.net/), 
-> [Ge-Peng Ji](https://scholar.google.com/citations?user=oaxKYKUAAAAJ&hl=en), 
+> [Ge-Peng Ji](https://github.com/GewelsJI), 
 > [Ming-Ming Cheng](https://mmcheng.net/) &
 > [Ling Shao](http://www.inceptioniai.org/).
 
-## 1. Preface
+## 1. Features
 
-- **Introduction.** This repository contains the source code, prediction results, and evaluation toolbox of our Search and Identification Network (SINet-V2)
-, which are the journal extension version of our paper SINet ([github](https://github.com/DengPingFan/SINet)/
+- **Introduction.** This repository contains the source code, prediction results, and evaluation toolbox of our Search and Identification Network, also called SINet-V2 ([arXiv](http://dpfan.net/wp-content/uploads/ConcealedOD_paper.pdf) / [SuppMaterial](http://dpfan.net/wp-content/uploads/ConcealedOD_supp.pdf) / [ProjectPage](http://dpfan.net/Camouflage/))
+, which are the journal extension version of our paper SINet ([github](https://github.com/DengPingFan/SINet) /
 [pdf](https://openaccess.thecvf.com/content_CVPR_2020/papers/Fan_Camouflaged_Object_Detection_CVPR_2020_paper.pdf)) published at CVPR-2020.
 
 - **Highlights.** Compared to our conference version, we achieve new SOTA in the field of COD via the two 
@@ -19,11 +19,19 @@ well-elaborated sub-modules, including neighbor connection decoder (NCD) and gro
 Please refer to our paper for more details.
 
 > If you have any questions about our paper, feel free to contact me via e-mail (gepengai.ji@gmail.com). 
-> And if you are using our our and evaluation toolbox for your research, please cite this paper ([BibTeX](#4-citation)).
+> And if you are using our code and evaluation toolbox for your research, please cite this paper ([BibTeX](#4-citation)).
 
 
 ## 2. :fire: NEWS :fire:
 
+- [2021/06/16] Update latest download link ([Pytorch](https://drive.google.com/file/d/1I3vKdcjafkTb2U2pOke07khurXxqLpzR/view?usp=sharing) / [Jittor](https://drive.google.com/file/d/13DeX-IMFE6u0TnNG5blUvHzo5o21cVpc/view?usp=sharing)) on four testing dataset, including CHAMELEON, CAMO, COD10K, NC4K.
+- [2021/06/11] :fire: 「图形与几何计算」公众号报道：[计图开源：隐蔽目标检测新任务在计图框架下推理性能大幅提升](https://mp.weixin.qq.com/s/2vdGRzAC7_udlsAuIkE2dg)。 
+- [2021/06/05] The [Jittor convertion of SINet-V2 (inference code)](https://github.com/GewelsJI/SINet-V2/tree/main/jittor) is available right now.
+  It has robust inference efficiency compared to PyTorch version, please enjoy it. 
+  Many thanks to Yu-Cheng Chou for the excellent conversion from pytorch framework)
+- [2021/06/01] :fire: Our **TPAMI-2021** paper is early access to [IEEE Xplore](https://ieeexplore.ieee.org/document/9444794).
+- [2021/05/18] 机器之心走近全球顶尖实验室系列之「伪装目标检测：挑战、方法和应用」视频报告分享([链接](https://app6ca5octe2206.pc.xiaoe-tech.com/detail/v_60a36389e4b0adb2d8652c35/3))。
+- [2021/05/16] [Jittor](https://cg.cs.tsinghua.edu.cn/jittor/) code will come soon ...
 - [2021/05/01] Updating the download link of training/testing dataset in our experiments.
 - [2021/04/20] The release of inference map on the [2021-CVPR-NC4K](https://github.com/JingZhang617/COD-Rank-Localize-and-Segment) test dataset, which can be downloaded from the [Google Drive](https://drive.google.com/file/d/1ux2-eDSaAu0EcEV-s04s5u-H27W5siFx/view?usp=sharing).
 - [2021/02/21] Upload the whole project.
@@ -112,18 +120,18 @@ please follow this the instructions in `./eval/main.m` and just run it to genera
 The complete evaluation toolbox (including data, map, eval code, and res): [link](https://drive.google.com/file/d/1qga1UJlIQdHNlt_F9TdN4lmmOH4gN7l2/view?usp=sharing). 
 
 ### 3.3 Pre-computed maps: 
-They can be found in [download link](https://drive.google.com/file/d/1wSCvCXaaRLUDl38HOCAMdsVb-8gASJb1/view?usp=sharing).
+They can be found in download link([Pytorch](https://drive.google.com/file/d/1I3vKdcjafkTb2U2pOke07khurXxqLpzR/view?usp=sharing) / [Jittor](https://drive.google.com/file/d/13DeX-IMFE6u0TnNG5blUvHzo5o21cVpc/view?usp=sharing)) on four testing dataset, including CHAMELEON, CAMO, COD10K, NC4K.
 
 
 ## 4. Citation
 
-Please cite our paper if you find the work useful: 
+If you find this project useful, please consider citing:
 
-    @article{fan2021cancealed,
-    title={Concealed Object Detection},
-    author={Fan, Deng-Ping and Ji, Ge-Peng and Cheng, Ming-Ming and Shao, Ling},
-    journal={arXiv},
-    year={2021}
+    @article{fan2021concealed,
+      title={Concealed Object Detection},
+      author={Fan, Deng-Ping and Ji, Ge-Peng and Cheng, Ming-Ming and Shao, Ling},
+      journal={IEEE TPAMI},
+      year={2021}
     }
 
 ## 6. FAQ
@@ -131,6 +139,7 @@ Please cite our paper if you find the work useful:
 1. If the image cannot be loaded in the page (mostly in the domestic network situations).
 
     [Solution Link](https://blog.csdn.net/weixin_42128813/article/details/102915578)
+    
     
 ## 7. License
 
